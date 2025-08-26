@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .one img {
+            height: 600px;
+            width: 1250px;
+        
+        }
+        .one p{
+            font-size: 50px;
+            color: #0a0909;
+            font-weight: bolder;
+            margin-top: -1000px;
+            margin-left: 350px;
+            font-style: italic
+        }
+body {
+    background-color: black;
+    color: white;
+}
+
+.background {
+    position: relative;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: -50px; left: 0;
+    width: 1250px; height: 600px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+    margin-top: -90px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language-select {
+    padding: 5px 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.signin-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    max-width: 650px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.email-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email-box input {
+    padding: 15px;
+    width: 350px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #151514;
+}
+
+.get-started {
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.trending h1 {
+    margin-left: 140px;
+    font-weight: 700;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.trending img {
+    height: 300px;
+    margin-left: 140px;
+}
+.reason h1 {
+    margin-left: 130px;
+    font-weight: 700;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.one-box {
+    background-color: #201120;
+    height: 330px;
+    width: 220px;
+    margin-left: 130px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.one-box h2 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 23px;
+    margin-top: 20px;
+
+}
+.one-box p {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 20px;
+}
+.one-box img {
+    width: 50px;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.two-box {
+    background-color: #201120;
+    height: 330px;
+    width: 220px;
+    margin-left: 35px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.two-box h2 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.two-box p {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 20px;
+}
+.two-box img {
+    width: 60px;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+.three-box {
+    background-color: #201120;
+    height: 330px;
+    width: 220px;
+    margin-left: 35px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.three-box h2 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 23px;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.three-box p {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 20px;
+}
+.three-box img {
+    width: 60px;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+.four-box {
+    background-color: #201120;
+    height: 330px;
+    width: 220px;
+    margin-left: 35px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.four-box h2 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 23px;
+    margin-left: -10px;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.four-box p {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 20px;
+}
+.four-box img {
+    width: 60px;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: 60px;
+}
+.boxes {
+    display: flex;
+}
+.netflix h2{
+    margin-left: 130px;
+    font-weight: 700;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.netflix button {
+    background-color: #414141;
+    color: white;
+    width: 1000px;
+    height: 75px;
+    margin-left: 130px;
+    font-size: 28px;
+    text-align: left;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    height: 500px;
+}
+.ready {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: netflix-sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.mail-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mail-box input {
+    padding: 15px;
+    width: 600px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #151514;
+}
+
+.get-start {
+    background-color: rgb(251, 48, 48);
+    color: white;
+    font-size: 1rem;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.bro {
+    margin-top: 50px;
+    margin-left: -800px;
+    color: #9F9F9F;
+    font-size: 20px;
+    font-family: netflix-sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.which li{
+    text-decoration: underline;
+    font-size: 17px;
+    margin-left: -200px;
+    font-family: netflix-sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.centre li{
+    text-decoration: underline;
+    font-size: 17px;
+    margin-left: 200px;
+    font-family: netflix-sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <div class="one"><img src="./background.jpg" alt=""><p>.</p></div>
+    <div class="background">
+        <div class="overlay"></div>
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+            <div class="header-buttons">
+                <select class="language-select">
+                    <option>English</option>
+                    <option>हिन्दी</option>
+                </select>
+                <button class="signin-btn">Sign In</button>
+            </div>
+        </header>
+        <div class="content">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <p class="subtitle">Starts at ₹149. Cancel at any time.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-box">
+                <input type="email" placeholder="Email address">
+                <button class="get-started">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <hr color="red" style="margin-top: 5px; width: 100%; height: 3px;">
+    <div class="trending">
+        <h1>Trending Now</h1>
+        <img src="./1.png" alt="">
+        </div>
+    </div>
+    <br><br>
+    <div class="reason">
+    <h1>More reasons to join</h1>
+    </div>
+    <div class="boxes">
+   <div class="one-box"><h2>Enjoy on your TV</h2>
+    <p>Watch on smart TVs, <br>PlayStation, Xbox, <br>Chromecast, Apple TV,<br> Blu-ray players and more.</p>
+<img src="./tv.jpg" alt=""></div>
+   <div class="two-box"><h2>Download your <br>shows to watch <br>offline</h2>
+    <p>Save your favourites easily <br> and always have <br> something to watch.</p>
+<img src="./down.jpg" alt=""></div>
+    <div class="three-box"><h2>Watch <br>everywhere</h2>
+        <p>Stream unlimited movies <br> and TV shows on your <br> phone, tablet, laptop and  <br>TV.</p>
+    <img src="./pic 3.jpg" alt=""></div>
+    <div class="four-box"><h2>Create profiles <br>for kids</h2>
+        <p>Send kids on adventures <br> with their favourite <br> characters in a space made <br> just for them — free with <br> your membership.</p>
+   <img src="./pic 4.jpg" alt=""> </div>
+    </div>
+    <br><br>
+    <div class="netflix">
+        <h2>Frequently Asked Questions</h2>
+        <button>What is Netflix?</button>
+        <br><br>
+        <button>How much does Netflix cost?</button>
+        <br><br>
+        <button>Where can I watch?</button>
+        <br><br>
+        <button>How do I cancel?</button>
+        <br><br>
+        <button>What can I watch on Netflix?</button>
+        <br><br>
+        <button>Is Netflix good for kids?</button>
+    </div>
+    <br><br>
+    <footer>
+        <p class="ready">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="mail-box">
+            <input type="mail" placeholder="Email address">
+            <button class="get-start">Get Started ➤</button>
+        </div>
+        <div class="bro">
+            <p>Questions? Call <span style="text-decoration: underline;">000-800-040-1843</span></p>
+            <br>
+            <ul class="which">
+                <li>FAQ</li><br>
+                <li>Investor Relations</li><br>
+                <li>Privacy</li><br>
+                <li>Speed Test</li>
+            </ul>
+            <div>
+            <ul class="centre">
+                <li>Help Centre</li><br>
+                <li>Jobs</li><br>
+                <li>Cookie Preferences</li><br>
+                <li>Legal Notices</li>
+            </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
